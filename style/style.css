@@ -1,0 +1,94 @@
+/* optimize-start */
+* {
+  font-family: ubuntu;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1230px;
+}
+.h1 {
+  text-align: left;
+  font-size: 72px;
+  line-height: 94px;
+  letter-spacing: 1px;
+  color: #1e212c;
+}
+.h2 {
+  text-align: center;
+  font-size: 46px;
+  line-height: 88px;
+  color: #1e212c;
+}
+.button {
+  padding: 17px 40px;
+  background-color: #ff5a30;
+  border-radius: 4px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  color: #ffff;
+}
+.button--transporent {
+  background-color: transparent;
+  border: 1px solid #ffff;
+}
+/* optimize-end */
+
+/* header start */
+.header {
+  display: flex;
+}
+.header__logo {
+  margin-top: 35px;
+}
+.header-nav__list {
+  display: flex;
+  margin: 35px 0px 0px 20px;
+}
+.header-nav__item {
+  margin-right: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 25.6px;
+  color: #424551;
+}
+.header__contacts {
+  display: flex;
+  margin: 24px 0px 0px 135px;
+}
+.header-contacts__contact {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr;
+  margin-right: 5px;
+}
+.header-contacts__icon {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  margin-right: 10px;
+}
+.header-contacts__action {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 21px;
+  text-align: left;
+  color: #424551;
+}
+.header-contacts__link {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  font-size: 18px;
+  line-height: 27px;
+  color: #1e212c;
+}
+/* header-end */
+
+/* buttons-start */
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 556px 1050px 0px 342px;
+  background-color: darkgrey;
+}
