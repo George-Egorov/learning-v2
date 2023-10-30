@@ -9,46 +9,37 @@
   </head>
   <body>
     <header class="header container">
-      <a class="header__logo" href="#"
-        ><img src="./image/logo-main.svg" alt="logo-createx"
-      /></a>
       <nav class="header__navbar header-nav">
+        <a class="header-nav__logo" href="#"><img src="./image/logo-main.svg" alt="logo-createx"/></a>
         <ul class="header-nav__list">
-          <li class="header-nav__item"><a href="#">About Us</a></li>
-          <li class="header-nav__item"><a href="#">Services</a></li>
-          <li class="header-nav__item"><a href="#">Work</a></li>
-          <li class="header-nav__item"><a href="#">News</a></li>
-          <li class="header-nav__item"><a href="#">Contacts</a></li>
+          <li class="header-nav__item"><a class="header-nav__link" href="#">About Us</a></li>
+          <li class="header-nav__item"><a class="header-nav__link" href="#">Services</a></li>
+          <li class="header-nav__item"><a class="header-nav__link" href="#">Work</a></li>
+          <li class="header-nav__item"><a class="header-nav__link" href="#">News</a></li>
+          <li class="header-nav__item"><a class="header-nav__link" href="#">Contacts</a></li>
         </ul>
       </nav>
       <address class="header__contacts header-contacts">
-        <div class="header-contacts__contact">
-          <img
-            class="header-contacts__icon"
-            src="./image/phone-icon.svg"
-            alt="phone-icon"
-          />
-          <p class="header-contacts__action">Call us</p>
-          <a class="header-contacts__link" href="tel:+74055550128"
-            >(405) 555-0128</a
-          >
-        </div>
-        <div class="header-contacts__contact">
-          <img
-            class="header-contacts__icon"
-            src="./image/chat-icon.svg"
-            alt="chat-icon"
-          />
-          <p class="header-contacts__action">Talk to us</p>
-          <a class="header-contacts__link" href="mailto:hello@createx.com"
-            >hello@createx.com</a
-          >
-        </div>
+        <a href="tel:+74055550128">
+          <div class="header-contacts__contact">
+            <img class="header-contacts__icon" src="./image/phone-icon.svg" alt="phone-icon"/>
+            <span class="header-contacts__action">Call us</span>
+            <span class="header-contacts__address">(405) 555-0128</span>
+          </div>
+        </a>
+        <a href="mailto:hello@createx.com">
+          <div class="header-contacts__contact">
+            <img class="header-contacts__icon" src="./image/chat-icon.svg" alt="chat-icon"/>
+            <span class="header-contacts__action">Talk to us</span>
+            <span class="header-contacts__address">hello@createx.com</span>
+          </div>
+        </a>
       </address>
     </header>
     <section class="buttons">
-      <button class="button button--transporent">LEARN MORE ABOUT US</button>
+      <button class="button button--transparent">Learn more about us</button>
       <button class="button">SUBMIT REQUEST</button>
     </section>
   </body>
 </html>
+  
