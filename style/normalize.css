@@ -21,6 +21,11 @@ body {
   -webkit-tap-highlight-color: transparent;
 }
 
+h1 { 
+margin: 0px;
+padding: 0px;
+}
+
 address {
   font-style: normal;
 }
@@ -56,3 +61,4 @@ input {
 input:focus {
   outline: none;
 }
+
