@@ -33,16 +33,9 @@ text-align: left;
   color: #787A80;
 }
 
-.h2 {
-  text-align: center;
-  font-size: 46px;
-  line-height: 88px;
-
-}
-
 .button {
   display: flex;
-  padding: 16px 35.5px;
+  padding: 16px 35px;
   background-color: #ff5a30;
   border-radius: 4px;
   border: none;
@@ -58,6 +51,12 @@ text-align: left;
   background-color: transparent;
   border: 1px solid #ff5a30;
   color: #ff5a30;
+}
+
+.button--transparent-white {
+  margin-right: 25px;
+  border-color: #ffffff;
+  color: #ffffff;
 }
 /* optimize-end */
 
@@ -165,12 +164,6 @@ text-align: left;
 
 .first-screen__buttons {
   display: flex;
-  gap: 25px;
-}
-
-.button--transparent-white {
-  border-color: #ffffff;
-  color: #ffffff;
 }
 
 .first-screen__scroll-button {
