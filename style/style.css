@@ -226,20 +226,15 @@ margin-bottom: 180px;
 /* about-end */
 
 /* values-start */
-.dig-pic {
-  width: 48px;
-  height: 48px;
-}
-
-.values__h2 {
+.values__title {
   margin-bottom: 24px;
 }
 
-.values__default-text {
+.values__description {
   margin-bottom: 60px;
 }
 
-.values__item-box {
+.values__list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 188px;
@@ -256,7 +251,12 @@ margin-bottom: 180px;
   margin-bottom: 20px;
 }
 
-.values__h3 {
+.values__dig-pic {
+  width: 48px;
+  height: 48px;
+}
+
+.values__subtitle {
   margin-bottom: 8px;
 }
 
