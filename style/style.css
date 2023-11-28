@@ -275,7 +275,7 @@ margin-bottom: 180px;
 }
 /* values-end */
 
-/* 
+/* questions-start */
 .wrapper-background {
   background-image: url(../image/bg-image.png);
   background-size: cover;
@@ -341,11 +341,9 @@ margin-bottom: 180px;
   font-weight: 700;
   line-height: 44px;
 }
+/* questions-end */
 
-.services {
-
-}
-
+/* services-start */
 .services__title {
   margin-bottom: 24px;
 }
@@ -426,4 +424,5 @@ margin-bottom: 180px;
   background-position: 50% 50%;
   color: #ffffff;
   fill: #ffffff;
-} */
+}
+/* services-end */
