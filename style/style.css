@@ -2,12 +2,11 @@
 body {
   font-family: 'Manrope', sans-serif;
   font-family: 'Ubuntu', sans-serif;
-  color: #000;
+  color: #1E212C;
 }
 
 .container {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   width: 1230px;
 }
 
@@ -26,11 +25,29 @@ text-align: left;
   color: #1e212c ;
 }
 
+.h3 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
 .default-text {
   text-align: center;
   font-size: 18px;
   line-height: 27px;
   color: #787A80;
+}
+
+.p-text {
+  font-size: 16px;
+  line-height: 25.6px;
+  color: #787A80;
+}
+
+.action-text {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 42px;
 }
 
 .button {
@@ -196,6 +213,10 @@ text-align: left;
 /* first-screen-end */
 
 /* about-start */
+.about {
+margin-bottom: 180px;
+}
+
 .about__title {
   margin-bottom: 23px;
 }
@@ -209,3 +230,47 @@ text-align: left;
   justify-content: center;
 }
 /* about-end */
+
+/* values-start */
+.values {
+  margin-bottom: 178px;
+}
+
+.values__title {
+  margin-bottom: 24px;
+}
+
+.values__description {
+  margin-bottom: 59px;
+}
+
+.values__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 188px;
+  text-align: center;
+}
+
+.values__item {
+  width: 285px;
+  position: relative;
+}
+
+.values__image {
+  margin-bottom: 20px;
+}
+
+.values__subtitle {
+  margin-bottom: 8px;
+}
+
+.values__item:not(:nth-child(3n))::before {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -94px;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(to top, rgba(218, 219, 221, 0.00) 0%, rgba(218, 219, 221, 0.50) 12.33%, #DADBDD 51.91%, rgba(218, 219, 221, 0.50) 87.85%, rgba(218, 219, 221, 0.00) 100%);
+}
+/* values-end */
