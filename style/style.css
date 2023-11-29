@@ -26,6 +26,12 @@ text-align: left;
 }
 
 .h3 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 42px;
+}
+
+.h4 {
   font-size: 20px;
   font-weight: 700;
   line-height: 30px;
@@ -42,12 +48,6 @@ text-align: left;
   font-size: 16px;
   line-height: 25.6px;
   color: #787A80;
-}
-
-.action-text {
-  font-size: 28px;
-  font-weight: 700;
-  line-height: 42px;
 }
 
 .button {
@@ -74,6 +74,11 @@ text-align: left;
   margin-right: 25px;
   border-color: #ffffff;
   color: #ffffff;
+}
+
+.button--small {
+  padding: 14px 32px;
+  font-size: 14px;
 }
 /* optimize-end */
 
@@ -233,7 +238,7 @@ margin-bottom: 180px;
 
 /* values-start */
 .values {
-  margin-bottom: 178px;
+  margin-bottom: 272px;
 }
 
 .values__title {
@@ -248,6 +253,7 @@ margin-bottom: 180px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 188px;
+  margin-bottom: 178px;
   text-align: center;
 }
 
@@ -261,7 +267,7 @@ margin-bottom: 180px;
 }
 
 .values__subtitle {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .values__item:not(:nth-child(3n))::before {
@@ -277,14 +283,28 @@ margin-bottom: 180px;
 
 /* questions-start */
 .wrapper-background {
-  background-image: url(../image/bg-image.png);
+  position: relative;
+  background: #F4F5F6 url(../image/bg-image.png) no-repeat;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position-y: 93px;
+  background-position-y: 10px;
 }
 
 .questions {
+  position: absolute;
+  top: -94px;
+  left: 367px;
   margin-bottom: 120px;
+}
+
+.questions__background {
+  background-color: #ffffff;
+}
+
+.questions__title {
+  margin-bottom: 70px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700px;
 }
 
 .questions__form {
@@ -292,14 +312,7 @@ margin-bottom: 180px;
   justify-content: space-between;
   padding: 0 60px 48px 60px;
   box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.03), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 80px 80px -20px rgba(154, 156, 165, 0.08);
-  background-color: #ffffff;
-}
-
-.questions__title {
-  margin-bottom: 72px;
-  text-align: center;
-  font-size: 28px;
-  font-weight: 700px;
+  border-radius: 4px;
 }
 
 .questions__item {
@@ -312,6 +325,9 @@ margin-bottom: 180px;
   border-radius: 4px;
   background-color: #F4F5F6;
   font-size: 14px;
+}
+
+.questions__input::placeholder {
   color: #9A9CA5;
 }
 
@@ -333,19 +349,15 @@ margin-bottom: 180px;
   font-size: 14px;
   line-height: 21px;
 }
-
-.questions__button {
-  display: inline-block;
-  padding: 0 32px;
-  font-size: 14px; 
-  font-weight: 700;
-  line-height: 44px;
-}
 /* questions-end */
 
 /* services-start */
+.services {
+padding-top: 212px;
+}
+
 .services__title {
-  margin-bottom: 24px;
+  margin-bottom: 23px;
 }
 
 .services__description {
@@ -355,6 +367,7 @@ margin-bottom: 180px;
 .services__list {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 85px;
 }
 
 .services__item {
@@ -362,32 +375,12 @@ margin-bottom: 180px;
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-bottom: 84px;
   width: 285px;
   height: 285px;
   background-color: #ffffff;
   border: 1px solid #E5E8ED;
   border-radius: 4px;
   box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.03), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 80px 80px -20px rgba(154, 156, 165, 0.08);
-}
-
-.services__item-image {
-  margin-bottom: 19px;
-}
-
-.services__item-title {
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 30px;
-}
-
-.services__action {
-  display: flex;
-  justify-content: center;
-}
-
-.services__action-text {
-  margin-right: 40px;
 }
 
 .services__item--construction:hover {
@@ -424,5 +417,24 @@ margin-bottom: 180px;
   background-position: 50% 50%;
   color: #ffffff;
   fill: #ffffff;
+}
+
+.services__item-image {
+  margin-bottom: 19px;
+}
+
+.services__item-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.services__action {
+  display: flex;
+  justify-content: center;
+}
+
+.services__action-text {
+  margin-right: 40px;
 }
 /* services-end */
