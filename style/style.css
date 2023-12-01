@@ -58,7 +58,7 @@ text-align: left;
   border: none;
   text-transform: uppercase ;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 700;
   letter-spacing: 0.5px;
   color: #ffffff;
   cursor: pointer;
@@ -78,6 +78,13 @@ text-align: left;
 
 .button--small {
   padding: 14px 32px;
+  font-size: 14px;
+}
+
+.input {
+  border: 1px solid #D7DADD;
+  border-radius: 4px;
+  background-color: #F4F5F6;
   font-size: 14px;
 }
 /* optimize-end */
@@ -139,7 +146,7 @@ text-align: left;
 
 .header-contacts__action {
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 21px;
   text-align: left;
   color: #424551;
@@ -238,7 +245,7 @@ margin-bottom: 180px;
 
 /* values-start */
 .values {
-  margin-bottom: 272px;
+  margin-bottom: 270px;
 }
 
 .values__title {
@@ -283,17 +290,14 @@ margin-bottom: 180px;
 
 /* questions-start */
 .wrapper-background {
-  position: relative;
   background: #F4F5F6 url(../image/bg-image.png) no-repeat;
   background-size: cover;
   background-position-y: 10px;
 }
 
 .questions {
-  position: absolute;
-  top: -94px;
-  left: 367px;
-  margin-bottom: 120px;
+  transform: translateY(-54%);
+  margin-bottom: 16px;
 }
 
 .questions__background {
@@ -301,15 +305,14 @@ margin-bottom: 180px;
 }
 
 .questions__title {
-  margin-bottom: 70px;
+  margin-bottom: 61px;
   text-align: center;
-  font-size: 28px;
-  font-weight: 700px;
 }
 
 .questions__form {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 260px 260px 414px 104px;
+  grid-gap: 24px;
   padding: 0 60px 48px 60px;
   box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.03), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 80px 80px -20px rgba(154, 156, 165, 0.08);
   border-radius: 4px;
@@ -320,27 +323,12 @@ margin-bottom: 180px;
 }
 
 .questions__input {
+  width: 100%;
   padding: 11px 0 9px 16px;
-  border: 1px solid #D7DADD;
-  border-radius: 4px;
-  background-color: #F4F5F6;
-  font-size: 14px;
 }
 
 .questions__input::placeholder {
   color: #9A9CA5;
-}
-
-.questions__input--name {
-  padding-right: 55px;
-}
-
-.questions__input--phone {
-  padding-right: 55px;
-}
-
-.questions__input--message {
-  padding-right: 209px;
 }
 
 .questions__label {
@@ -353,11 +341,12 @@ margin-bottom: 180px;
 
 /* services-start */
 .services {
-padding-top: 212px;
+  padding-bottom: 85px;
 }
 
 .services__title {
   margin-bottom: 23px;
+  align-self: flex-end;
 }
 
 .services__description {
@@ -372,58 +361,49 @@ padding-top: 212px;
 
 .services__item {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
   width: 285px;
   height: 285px;
+  transition: all 1.5s ease 0s;
   background-color: #ffffff;
   border: 1px solid #E5E8ED;
   border-radius: 4px;
   box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.03), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 80px 80px -20px rgba(154, 156, 165, 0.08);
+  fill: #ff5a30;
+}
+
+.services__item:hover {
+  transition: all 1s ease 0s;
+  background-size: cover;
+  background-position: 50% 50%;
+  color: #ffffff;
+  fill: #ffffff;
 }
 
 .services__item--construction:hover {
-  transition: 1s;
   background-image: url(../image/construction.jpg);
-  background-size: cover;
-  background-position: 50% 50%;
-  color: #ffffff;
-  fill: #ffffff;
 }
 
 .services__item--project:hover {
-  transition: 1s;
   background-image: url(../image/project.jpg);
-  background-size: cover;
-  background-position: 50% 50%;
-  color: #ffffff;
-  fill: #ffffff;
 }
 
 .services__item--design:hover {
-  transition: 1s;
-  background-image: url(../image/design.svg);
-  background-size: cover;
-  background-position: 50% 50%;
-  color: #ffffff;
-  fill: #ffffff;
+  background-image: url(../image/cat-drift.gif);
 }
 
 .services__item--repairs:hover {
-  transition: 1s;
   background-image: url(../image/repairs.jpg);
-  background-size: cover;
-  background-position: 50% 50%;
-  color: #ffffff;
-  fill: #ffffff;
 }
 
 .services__item-image {
-  margin-bottom: 19px;
+  padding-bottom: 12px;
 }
 
 .services__item-title {
+  padding-top: 25px;
   font-size: 20px;
   font-weight: 700;
   line-height: 30px;
