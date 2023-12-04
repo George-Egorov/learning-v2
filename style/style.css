@@ -81,6 +81,10 @@ text-align: left;
   font-size: 14px;
 }
 
+.button--send {
+  align-self: end;
+}
+
 .input {
   border: 1px solid #D7DADD;
   border-radius: 4px;
@@ -305,7 +309,7 @@ margin-bottom: 180px;
 }
 
 .questions__title {
-  margin-bottom: 61px;
+  margin-bottom: 34px;
   text-align: center;
 }
 
@@ -318,24 +322,20 @@ margin-bottom: 180px;
   border-radius: 4px;
 }
 
-.questions__item {
-  position: relative;
+.questions__label {
+  display: inline-block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  line-height: 21px;
 }
 
 .questions__input {
-  width: 100%;
   padding: 11px 0 9px 16px;
+  width: 100%;
 }
 
 .questions__input::placeholder {
   color: #9A9CA5;
-}
-
-.questions__label {
-  position: absolute;
-  top: -28px;
-  font-size: 14px;
-  line-height: 21px;
 }
 /* questions-end */
 
@@ -366,7 +366,7 @@ margin-bottom: 180px;
   align-items: center;
   width: 285px;
   height: 285px;
-  transition: all 1.5s ease 0s;
+  transition: all 1.5s ease;
   background-color: #ffffff;
   border: 1px solid #E5E8ED;
   border-radius: 4px;
@@ -375,7 +375,7 @@ margin-bottom: 180px;
 }
 
 .services__item:hover {
-  transition: all 1s ease 0s;
+  transition: all 1s ease;
   background-size: cover;
   background-position: 50% 50%;
   color: #ffffff;
@@ -398,12 +398,11 @@ margin-bottom: 180px;
   background-image: url(../image/repairs.jpg);
 }
 
-.services__item-image {
-  padding-bottom: 12px;
+.services__icon {
+  margin-bottom: 24px;
 }
 
 .services__item-title {
-  padding-top: 25px;
   font-size: 20px;
   font-weight: 700;
   line-height: 30px;
@@ -415,6 +414,6 @@ margin-bottom: 180px;
 }
 
 .services__action-text {
-  margin-right: 40px;
+  margin-right: 47px;
 }
 /* services-end */
